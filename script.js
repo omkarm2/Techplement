@@ -1,4 +1,3 @@
-// Define variables
 const inputBox = document.querySelector('.input-box');
 const searchBtn = document.getElementById('searchBtn');
 const weatherImg = document.querySelector('.weather-img');
@@ -11,7 +10,7 @@ const weatherBody = document.querySelector('.weather-body');
 const apiKey = "65a23f815e393e736692d662908163ed";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather";
 
-// Function to fetch weather data
+
 async function fetchWeather(city) {
     try {
         const response = await fetch(`${apiUrl}?q=${city}&appid=${apiKey}`);
@@ -23,7 +22,7 @@ async function fetchWeather(city) {
     }
 }
 
-// Function to update UI with weather data
+
 function updateWeatherUI(weatherData) {
     if (!weatherData || weatherData.cod === "404") {
         locationNotFound.style.display = "flex";
@@ -60,7 +59,7 @@ function updateWeatherUI(weatherData) {
     console.log(weatherData);
 }
 
-// Event listener for search button
+
 searchBtn.addEventListener('click', async () => {
     const city = inputBox.value.trim();
     if (city) {
@@ -68,3 +67,36 @@ searchBtn.addEventListener('click', async () => {
         updateWeatherUI(weatherData);
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
