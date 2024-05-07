@@ -41,19 +41,19 @@ function updateWeatherUI(weatherData) {
 
     switch (weatherData.weather[0].main) {
         case 'Clouds':
-            weatherImg.src = "/images/suncloudy.png";
+            weatherImg.src = "/Techplement/images/suncloudy.png";
             break;
         case 'Clear':
-            weatherImg.src = "/images/sunclear.png";
+            weatherImg.src = "/Techplement/images/sunclear.png";
             break;
         case 'Rain':
-            weatherImg.src = "/images/rainn.png";
+            weatherImg.src = "/Techplement/images/rainn.png";
             break;
         case 'Mist':
-            weatherImg.src = "/images/mistt.png";
+            weatherImg.src = "/Techplement/images/mistt.png";
             break;
         case 'Snow':
-            weatherImg.src = "/images/snoww.png";
+            weatherImg.src = "/Techplement/images/snoww.png";
             break;
     }
 
